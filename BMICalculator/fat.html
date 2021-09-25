@@ -1,0 +1,80 @@
+<html>
+<head><title></title>
+    
+<style>
+#head{   Background-color:navy;
+}
+#ta{Background-color:yellow;
+
+font-size:25px;}
+.de {
+border: solid 1px navy;
+background-color:yellow;
+font-size:20px;
+color:navy;
+
+width=200px;}
+    #bo{background-color:navy;
+    color:aliceblue;}
+</style>
+  <script language="JavaScript">
+<!--
+function hi() {
+var weight = document.bf.weight.value
+var wrist= document.bf.wrist.value
+var waist= document.bf.waist.value
+var hip= document.bf.hip.value
+var fore=document.bf.hip.value
+var fac1=(weight*0.732)+8.987
+var fac2=(wrist*3.14)
+
+var fac3=(waist*0.157)
+var fac4=hip*0.249
+var fac5=fore*0.434
+var tot=fac1+fac2-fac3-fac4+fac5
+var tb=weight-tot
+var bodyfat=(tb*100)/weight
+ 
+ if(bodyfat>0){
+document.bf.bm.value =bodyfat 
+  }
+else{
+alert("Please fill form again");
+}
+}
+//-->
+</script>
+    </head>
+<body style="background-color:lightyellow">
+    
+<div align="center" id="head">
+<font size="11" color="yellow">
+Calculate Your Body Fat</font><br><br><a href="bmi.html"><div align="left"><<button>Go Back</button></a>
+    <div></div>
+</div >
+ 
+<div align="center">
+<form action="get"   name="bf"class="de" id="for"  >
+<center><b>Calculate Your Body Fat Percentage(Female)</b></center><br>
+    
+Enter Total Body Weight(in Kg) <input type="text" name="weight" id="n"><br><br>
+Wrist Measurement<input type="text" name="wrist" id="w"><br><br>
+Waist Measurement<input type="text" name="waist" id="h"><br><br>
+Hip Measurement<input type="text" name="hip" id="w"><br><br>
+Forearm Measurement<input type="text" name="fore" id="h"><br><br>
+
+<center><input type="button" value="Calculate" onClick="hi()"></center><br><br>
+ Your Body Fat Percentage: <input type="text" name="bm" size="10"><br />
+ 
+        </table>
+<br><br><br><br><br><br><br>
+</div>
+    
+<div style="background-color:navy">
+    
+    <center><font color="yellow">Contact:ankitarafiz@gmail.com</font></center><br></div>
+
+</body>
+
+
+</html>

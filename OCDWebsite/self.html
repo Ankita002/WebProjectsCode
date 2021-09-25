@@ -1,0 +1,330 @@
+<html>
+<head><title>
+</title>
+<style>#main{
+
+font-size:30;
+}
+.answers li { 
+list-style: upper-alpha; 
+} 
+
+label { 
+margin-left: 0.5em; 
+cursor: pointer; 
+} 
+
+#results { 
+ 
+color: 000000; 
+ 
+ 
+cursor: pointer; 
+ 
+}
+
+#results:hover { 
+ 
+color: green; 
+ 
+ 
+  
+cursor: pointer; 
+ 
+} 
+
+ 
+ 
+
+#closing {
+display: none;
+font-style: italic;
+}
+ .dropbtn {
+    background-color: green;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+a{
+text-decoration:none;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+</style>
+
+
+
+ 
+</head>
+
+<body>
+
+
+<script language="javascript">
+ 
+
+     
+ function result() { 
+  
+ var count=0;
+
+if( document.getElementById("q1a").checked)
+{
+
+count++
+} 
+           
+ if(  document.getElementById("q2a").checked)
+{
+
+count++
+} 
+  if( document.getElementById("q3a").checked )
+{
+
+count++
+} 
+ if( document.getElementById("q4a").checked)
+{
+
+count++
+}   
+
+ if( document.getElementById("q5a").checked)
+{
+
+count++
+} 
+  if(  document.getElementById("q6a").checked)
+{
+
+count++
+} 
+
+ if( document.getElementById("q7a").checked)
+{
+
+count++
+} 
+   if( document.getElementById("q8a").checked)
+{
+
+count++
+} 
+   if( document.getElementById("q9a").checked)
+{
+
+count++
+} 
+  if( document.getElementById("q10a").checked)
+{
+
+count++
+} 
+                                 
+ document.write("<Body bgcolor=lightyellow >"); 
+if(count==0)
+{
+document.write("<h2>You don't have OCD!</h2>");
+}
+
+if(count>0 )
+{
+if(count<=6){
+document.write("<h2>You may have OCD. Consult a psychiatrist for a more precise diagnosis.</h2> ");
+}
+}
+
+if(count>=7)
+{
+
+document.write("<h2>Chances are high that you have OCD.Consult a psychiatrist for a more precise diagnosis.</h2>");
+ }
+document.write("<a href=self.html>Go Back</a><br><a href=ocd.html>Go to Home</a>");
+document.write("</Body>");   
+}
+
+
+</script>
+
+<div id="header">
+<center><font align="center" size="40" color="Green">Obsessive Compulsive Disorder</font></center>
+ 
+<div id="main">
+<br>
+<div class="dropdown">
+<tr><td><a href=#>
+  <button class="dropbtn"> About Us</button>
+   <div class="dropdown-content"><a href="about.html">Know more about us</a>
+    
+  </a></div></div></td>      <td><a href=#>
+  <div class="dropdown"><button class="dropbtn">OCD</button>
+   <div class="dropdown-content">
+    <a href="ocd2.html">What is OCD?</a>
+     
+  </a></div></div></td>      <td><a href=#>
+ <div class="dropdown"> <button class="dropbtn">Diagnosis</button>
+  <div class="dropdown-content">
+    <a href="self.html">Self Diagnosis</a>
+    <a href="s.html">Symptoms</a>
+    
+  </a></div></div></td>      <td><a href=#>
+ <div class="dropdown"> <button class="dropbtn">Types of OCD</button>
+  <div class="dropdown-content">
+    <a href="c.html">Cleanliness OCD</a>
+    <a href="p.html">POCD</a>
+    <a href="h.html">HOCD</a>
+<a href="r.html">ROCD</a>
+<a href="hoarding.html">Hoarding OCD</a>
+  </a></div></div></td>      <td><a href=#>
+  <div class="dropdown"><button class="dropbtn">Treatment</button>
+  <div class="dropdown-content">
+    <a href="t1.html">How OCD is treated?</a>
+    <a href="t2.html">Medications</a>
+    <a href="t3.html">Cognitive Behaviour Therapy</a></td></tr>
+  </a></div></div> 
+
+<br>
+</div>
+<center><font color="green"><h1>Self Diagnosis Test</h1></font></center>
+<br>
+<div style="background-color:lightyellow; border-style:solid; border-size:5px; border-radius:15px;border-color:green;">
+<center><font color="green"><h3>OCD Diagnosis Test</h3></font></center><br>
+<form>
+In Below Questions mark the extent to which you feel you are obsessed by the above questions:
+<p class="question">1. Do you have fear or digust to and preoccupation with avoiding bodily waste, dirt and germs?</p>        
+
+<ul class="answers">            
+<input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Extreme</label><br/>          
+<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">High</label><br/>            
+<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Moderate</label><br/>            
+<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Low</label><br/>       
+</ul>        
+
+
+<p class="question">2. Do you have hoarding, saving, and collecting obsessions?</p>        
+
+<ul class="answers">            
+<input type="radio" name="q2" value="a" id="q2a"><label for="q2a">Extreme</label><br/>           
+<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">High</label><br/>            
+<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">Moderate</label><br/>           
+<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">Low</label><br/>       
+</ul>        
+
+<p class="question">3. Do you have ordering obsession?</p>        
+
+<ul class="answers">            
+<input type="radio" name="q3" value="a" id="q3a"><label for="q3a">Extreme</label><br/>            
+<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">High</label><br/>            
+<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">Moderate</label><br/>           
+<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">Low</label><br/>       
+</ul>        
+
+<p class="question">4. Do you have religious and scrupulosity obsessions?</p>        
+
+<ul class="answers">           
+<input type="radio" name="q4" value="a" id="q4a"><label for="q4a">Extreme</label><br/>            
+<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">High</label><br/>            
+<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">Moderate</label><br/>            
+<input type="radio" name="q4" value="d" id="q4d"><label for="q4d">Low</label><br/>        
+</ul>        
+
+<p class="question">5. Do you have body image obsessions?</p>        
+
+<ul class="answers">            
+<input type="radio" name="q5" value="a" id="q5a"><label for="q5a">Extreme</label><br/>            
+<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">High</label><br/>            
+<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">Moderate</label><br/>           
+<input type="radio" name="q5" value="d" id="q5d"><label for="q5d">Low</label><br/>        
+</ul>        
+
+<p class="question">6. Do you have sexual obsessions?</p>        
+
+<ul class="answers">            
+<input type="radio" name="q6" value="a" id="q6a"><label for="q6a">Extreme</label><br/>            
+<input type="radio" name="q6" value="b" id="q6b"><label for="q6b">High</label><br/>            
+<input type="radio" name="q6" value="c" id="q6c"><label for="q6c">Moderate</label><br/>            
+<input type="radio" name="q6" value="d" id="q6d"><label for="q6d">Low</label><br/>        
+</ul>       
+
+<p class="question">7. Do you have aggressive obsession?</p>        
+
+<ul class="answers">            
+<input type="radio" name="q7" value="a" id="q7a"><label for="q7a">Extreme</label><br/>            
+<input type="radio" name="q7" value="b" id="q7b"><label for="q7b">High</label><br/>            
+<input type="radio" name="q7" value="c" id="q7c"><label for="q7c">Moderate</label><br/>            
+<input type="radio" name="q7" value="d" id="q7d"><label for="q7d">Low</label><br/>        
+</ul>        
+
+<p class="question">8. Do you have health obsession?</p>        
+
+<ul class="answers">            
+<input type="radio" name="q8" value="a" id="q8a"><label for="q8a">Extreme</label><br/>            
+<input type="radio" name="q8" value="b" id="q8b"><label for="q8b">High</label><br/>            
+<input type="radio" name="q8" value="c" id="q8c"><label for="q8c">Moderate</label><br/>            
+<input type="radio" name="q8" value="d" id="q8d"><label for="q8d">Low</label><br/>       
+</ul>        
+
+<p class="question">9. Do you worry a lot about your morals and loosing them?</p>        
+
+<ul class="answers">            
+<input type="radio" name="q9" value="a" id="q9a"><label for="q9a">Extreme</label><br/>            
+<input type="radio" name="q9" value="b" id="q9b"><label for="q9b">High</label><br/>            
+<input type="radio" name="q9" value="c" id="q9c"><label for="q9c">Moderate</label><br/>            
+<input type="radio" name="q9" value="d" id="q9d"><label for="q9d">Low</label><br/>        
+</ul>        
+
+<p class="question">10. Do you find yourself excessively slow in doing tasks?</p>        
+
+<ul class="answers">           
+<input type="radio" name="q10" value="a" id="q10a"><label for="q10a">Extreme</label><br/>            
+<input type="radio" name="q10" value="b" id="q10b"><label for="q10b">High</label><br/>            
+<input type="radio" name="q10" value="c" id="q10c"><label for="q10c">Moderate</label><br/>            
+<input type="radio" name="q10" value="d" id="q10d"><label for="q10d">Low</label><br/>        
+</ul>        
+
+<br/>
+
+ <input type="button" id="results" value="Show result!" onclick="result();">  
+<br>
+<br>           
+</form>
+</div>
+       
+</div>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
